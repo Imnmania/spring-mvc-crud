@@ -47,5 +47,11 @@ public class CustomerController {
 		mav.addObject("customer", customer);
 		return mav;
 	}
+	
+	@RequestMapping("/delete")
+	public String deleteCustomer(@RequestParam(name = "id") long id) {
+		service.deleteCustomerById(id);
+		return "redirect:/";
+	}
 
 }
