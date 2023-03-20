@@ -53,5 +53,12 @@ public class CustomerController {
 		service.deleteCustomerById(id);
 		return "redirect:/";
 	}
-
+	
+	@RequestMapping("/search")
+	public ModelAndView searchCustomer(@RequestParam("keyword") String keyword) {
+		ModelAndView mav = new ModelAndView("searchCustomer");
+		List<Customer> result = service.search(keyword);
+		mav.addObject("result", result);
+		return mav;
+	}
 }
