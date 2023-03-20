@@ -6,6 +6,7 @@
     version="2.1">
      
     <persistence-unit name="SalesDB">
+    	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:8081/salesdb" />
             <property name="javax.persistence.jdbc.user" value="root" />

@@ -1,19 +1,15 @@
 package me.niloybiswas.customer.config;
 
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 
-@Configuration
-@ComponentScan("me.niloybiswas")
 public class WebAppInitializer implements WebApplicationInitializer{
 
 	@Override
