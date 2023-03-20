@@ -28,7 +28,7 @@ public class CustomerController {
 		return mav;
 	}
 	
-	@RequestMapping("/newCustomer")
+	@RequestMapping("/new")
 	public String newCustomerForm(Map<String, Object> model) {
 		model.put("customer", new Customer());
 		return "newCustomer";
@@ -40,7 +40,7 @@ public class CustomerController {
 		return "redirect:/";
 	}
 	
-	@RequestMapping("/editCustomer")
+	@RequestMapping("/edit")
 	public ModelAndView editCustomerForm(@RequestParam(name = "id") long id) {
 		ModelAndView mav = new ModelAndView("editCustomer");
 		Customer customer = service.getCustomerById(id);

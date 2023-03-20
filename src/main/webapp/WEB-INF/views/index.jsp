@@ -18,7 +18,7 @@
 			<input type="submit" value="Search" />
 		</form>
 		
-		<h3><a href="newCustomer">New Customer</a></h3>
+		<h3><a href="new">New Customer</a></h3>
 		
 		<table border="1">
 			<tr>
@@ -36,7 +36,7 @@
 					<td>${customer.email}</td>
 					<td>${customer.address}</td>
 					<td>
-						<a href="editCustomer?id=${customer.id}">Edit</a>
+						<a href="edit?id=${customer.id}">Edit</a>
 						&nbsp;&nbsp;&nbsp;
 						<a href="delete?id=${customer.id}">Delete</a>
 					</td>
